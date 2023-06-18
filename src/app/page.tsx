@@ -20,11 +20,11 @@ export default function Home() {
         <div className="absolute -top-[110px] md:hidden page__logo-container">
           <HeaderOPtions/>
         </div>
-        <div className=" bg-black flex-1 hidden sm:flex">
+        <div className=" flex-1 hidden sm:flex">
           <Image src={homeCofe} alt="svg da home" className="max-w-[100%] h-[100%] " />
         </div>
 
-        <div className="flex flex-1 flex-col items-center justify-center gap-5 max-w-[90%] pb-10 w-[100%] bg-black p-0">
+        <div className="flex flex-1 flex-col items-center justify-center gap-5 max-w-[90%] pb-10 w-[100%]  p-0">
           <h1 className="text-white md:text-[30px] text-[25px] font-semibold" >Aprenda Ingles De Forma Facil</h1>
           <form className={`
             flex flex-1 flex-col items-center justify-center  gap-6 
