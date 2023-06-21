@@ -61,8 +61,10 @@ function Words({ }: Props) {
                             <span className='text-green-50'>
                                 <CheckCircleOutlineOutlinedIcon />
                             </span>
-                            <span>
-                                {all.word} <ArrowRightAltIcon/> {all.translate}
+                            <span className='capitalize'>
+                                {all.word} 
+                                <ArrowRightAltIcon/> 
+                                <span className='text-light-500'>{all.translate}</span>
                             </span>
                             
                         </div>
@@ -80,7 +82,11 @@ function Words({ }: Props) {
                             <span className='text-purple-50'>
                                 <CheckCircleOutlineOutlinedIcon />
                             </span>
-                            <span>{all.expression} <ArrowRightAltIcon/> {all.translation}</span>
+                            <span className='capitalize'>
+                                {all.expression} 
+                                <ArrowRightAltIcon/> 
+                                <span className='text-light-500'>{all.translation}</span>
+                            </span>
                         </div>
                     ))}
                 </div>

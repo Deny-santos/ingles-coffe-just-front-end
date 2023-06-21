@@ -59,4 +59,5 @@ body {
 
 .test {
     background-color: #572eb7;
+    backdrop-filter: blur(15px);
 }

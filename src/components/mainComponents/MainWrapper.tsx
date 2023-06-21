@@ -16,7 +16,7 @@ function MainWrapper({ }: Props) {
 
     return (
         <main className={`
-            min-h-screen max-w-[100vw] scroll-smooth
+            min-h-screen max-w-[100vw] scroll-smooth pt-20
             ${darkMode ? `
                 dark:bg-dark-100
             ` : `
