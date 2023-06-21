@@ -6,7 +6,7 @@ type Props = {
     children: React.ReactNode;
 };
 
-export type UserContextType = {
+type UserContextType = {
     name: string;
     // isLogged: React.Dispatch<React.SetStateAction<boolean>>;
     setName: any;

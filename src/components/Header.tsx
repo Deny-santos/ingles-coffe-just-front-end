@@ -35,7 +35,7 @@ const Header = (props: Props) => {
                 <a
                     href="/main"
                     className={`
-                        text-[13px] sm:text-[20px]  px-8 sm:px-8 bg-blue-500 text-white h-max max-w-[100%] font-semibold rounded-md
+                        text-[13px] sm:text-[20px]  px-8 sm:px-8 bg-blue-100 text-light-50 h-max max-w-[100%] font-semibold rounded-md
                         py-3
                     `}>
                     Começar
@@ -45,7 +45,7 @@ const Header = (props: Props) => {
             <div className='flex  items-center justify-around'>
                 <Tooltip title="Veja Minhas Redes Sociais" enterDelay={500} leaveDelay={200}>
                     <Badge badgeContent={1} color="primary">
-                        <MailIcon color="inherit" sx={{ cursor: "pointer" }} />
+                        <MailIcon sx={{ cursor: "pointer", color: "white" }} />
                     </Badge>
                 </Tooltip>
             </div>

@@ -9,9 +9,8 @@ import Bars from "@/components/Bars";
 import useMenuBars from '@/hooks/useMenuBars'
 import Form from './Form'
 
-type Props = {}
 
-function Home({ }: Props) {
+function Home() {
 
     const {setShowBars, showBars} = useMenuBars()
 
@@ -30,7 +29,7 @@ function Home({ }: Props) {
                     </div>
 
                     <div className="flex flex-1 flex-col items-center justify-center gap-5 max-w-[90%] pb-10 w-[100%]  mx-auto ml-[14%]">
-                        <h1 className="text-white md:text-[30px] text-[25px] font-semibold" >Aprenda Ingles De Forma Facil</h1>
+                        <h1 className="text-light-50 md:text-[30px] text-[25px] font-semibold" >Aprenda Ingles De Forma Facil</h1>
                         <Form/>
                     </div>
                 </div>

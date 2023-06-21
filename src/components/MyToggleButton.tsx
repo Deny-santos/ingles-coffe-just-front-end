@@ -6,9 +6,10 @@ import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
 import useMenuBars from '@/hooks/useMenuBars';
 
 type Props = {
+    isLight?: boolean
 }
 
-const MyToggleButton = (props: Props) => {
+const MyToggleButton = ({isLight}: Props) => {
 
 
     const {handleShowMenu} = useMenuBars()
@@ -16,7 +17,9 @@ const MyToggleButton = (props: Props) => {
     return (
         <div className={`relative z-40`} onClick={handleShowMenu}>
             <ToggleButton  value="justify" key="justify" >
-                <FormatAlignJustifyIcon sx={{ color: "white", fontSize: "50px" }} />
+                <FormatAlignJustifyIcon sx={{ fontSize: "50px" }} className={`
+                    ${isLight? "text-dark-150": "text-light-50"}
+                `}/>
             </ToggleButton>
         </div>
     )

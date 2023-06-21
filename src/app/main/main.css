@@ -17,7 +17,6 @@
 
 
 
-// ============ utils ==============
 .bg-gradient {
-    background-color: var(--gradient-main);
+    background-color: radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
 }

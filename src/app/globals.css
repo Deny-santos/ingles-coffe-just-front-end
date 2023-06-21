@@ -43,7 +43,7 @@ body {
     text-align: center;
 }
 
-.logo{
+.logo {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Sriracha', cursive;
@@ -51,7 +51,12 @@ body {
 
 
 
-// ============ utils ==============
+
+
 .bg-gradient {
-    background-color: var(--gradient-main);
+    background-color: radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
+}
+
+.test {
+    background-color: #cfe71e;
 }

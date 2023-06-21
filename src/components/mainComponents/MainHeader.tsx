@@ -5,24 +5,39 @@ import Bars from '../Bars'
 import MyToggleButton from '../MyToggleButton'
 import useMenuBars from '@/hooks/useMenuBars'
 import Logo from '../Logo'
+import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
+import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
+import useTheme from '@/hooks/useTheme'
 
 type Props = {}
 
 const MainHeader = (props: Props) => {
 
-    const {handleShowMenu, setShowBars, showBars} = useMenuBars()
+    const { setShowBars, showBars} = useMenuBars()
+    
+    const { darkMode, handleSetDarkMode } = useTheme()
 
     return (
         <header 
-            className={`flex items-center`} 
+            className={`flex items-center gap-6 px-4`} 
             onClick={() => showBars? setShowBars(!showBars): ""}>
                 <span className='relative z-10'>
-                    <MyToggleButton />
+                    <MyToggleButton isLight={!darkMode} />
                 </span>
                 <div>
-                    <Logo/>
+                    <Logo isLight={!darkMode}/>
                 </div>
                 <Bars />
+                <span >
+                    {darkMode ? 
+                        <span onClick={handleSetDarkMode}>
+                            <WbSunnyOutlinedIcon className='text-yellows-50 text-[25px] cursor-pointer'/>
+                        </span> : 
+                        <span onClick={handleSetDarkMode}>
+                            <NightlightOutlinedIcon className='text-blue-100 text-[25px] cursor-pointer'/>
+                        </span>
+                    }
+                </span >
         </header>
     )
 }
