@@ -12,6 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
     },
     darkMode: 'class',
     colors: {
@@ -52,7 +55,14 @@ module.exports = {
         50: "#3B82F6",
         100: "#9333EA",
         150: "#EF4444"
-      }
+      },
+      green: {
+        50: "#45f721"
+      },
+      purple: {
+        50: "#572eb7"
+      },
+      
     },
   },
   plugins: [],

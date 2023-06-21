@@ -2,11 +2,12 @@
 
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
+import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import useTheme from '@/hooks/useTheme';
+
 
 
 type Words = {
@@ -16,7 +17,7 @@ type Words = {
 
 type Expressions = {
     expression: string[];
-    traslate: string[]
+    translation: string[]
 }
 
 
@@ -47,17 +48,23 @@ function Words({ }: Props) {
 
     return (
         <section className='flex items-center mt-20 '>
-            <div className='flex bg-blue-100 w-[90%] m-auto gap-4 text-[30px] rounded-2xl'>
+            <div className='flex bg-blue-100 w-[90%] m-auto gap-2 text-[30px] rounded-2xl gap '>
 
                 <div 
                     id='words'
                     className={`
-                    flex-1 p-3 border border-blue-100 rounded-s-2xl
+                    flex flex-col flex-1 p-3 border border-blue-100 rounded-s-2xl gap-5
                     ${darkMode ? "bg-dark-100 text-light-50": "bg-light-200"} 
                 `} >
                     {words.map((all: Words, i: number) => (
-                        <div key={i}>
-                            {i+1})  {all.word} : {all.translate}
+                        <div key={i} className='flex gap-3'>
+                            <span className='text-green-50'>
+                                <CheckCircleOutlineOutlinedIcon />
+                            </span>
+                            <span>
+                                {all.word} <ArrowRightAltIcon/> {all.translate}
+                            </span>
+                            
                         </div>
                     ))}
                 </div>
@@ -65,12 +72,15 @@ function Words({ }: Props) {
                 <div 
                     id='expresions'
                     className={`
-                    flex-1 p-3 text-[30px] border border-blue-100 rounded-e-2xl
+                    flex flex-col flex-1 p-3 text-[30px] border border-blue-100 rounded-e-2xl gap-9 flex-wrap
                     ${darkMode ? "bg-dark-100 text-light-50": "bg-light-200"}
                 `}>
                     {expressions.map((all: Expressions, i: number) => (
-                        <div key={i}>
-                            {all.expression}
+                        <div key={i} className='flex gap-3'>
+                            <span className='text-purple-50'>
+                                <CheckCircleOutlineOutlinedIcon />
+                            </span>
+                            <span>{all.expression} <ArrowRightAltIcon/> {all.translation}</span>
                         </div>
                     ))}
                 </div>

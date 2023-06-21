@@ -6,6 +6,7 @@ import Words from "@/components/mainComponents/Words"
 import UserName from "@/components/mainComponents/UserName"
 import CardSesion from "@/components/mainComponents/CardSesion"
 import useTheme from "@/hooks/useTheme"
+import MainFooter from './MainFooter'
 
 type Props = {}
 
@@ -26,6 +27,7 @@ function MainWrapper({ }: Props) {
             <UserName />
             <CardSesion />
             <Words />
+            <MainFooter />
         </main>
     )
 }
