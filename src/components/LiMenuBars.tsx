@@ -4,7 +4,7 @@ import React from 'react'
 
 type Props = {
     children: React.ReactNode,
-    href: "main",
+    href: string,
 }
 
 const LiMenuBars = (props: Props) => {

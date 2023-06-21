@@ -10,6 +10,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Logo from './Logo';
 import { Button } from '@mui/material';
 import useMenuBars from '@/hooks/useMenuBars';
+import MyToggleButton from './MyToggleButton';
 
 
 
@@ -24,10 +25,8 @@ const Header = (props: Props) => {
             flex flex-1 text-white absolute w-screen h-[90px] 
             items-center px-5 sm:px-10 sm:gap-10 gap-3 justify-between max-w-[100vw]
         `}>
-            <div className='flex' onClick={handleShowMenu}>
-                <ToggleButton value="justify" key="justify" >
-                    <FormatAlignJustifyIcon sx={{ color: "white", fontSize: "50px" }} />
-                </ToggleButton>
+            <div className='z-10'>
+                <MyToggleButton/>
             </div>
             <div className='w-full hidden md:flex'>
                 <Logo />

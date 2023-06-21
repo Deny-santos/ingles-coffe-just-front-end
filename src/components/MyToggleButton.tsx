@@ -14,7 +14,7 @@ const MyToggleButton = (props: Props) => {
     const {handleShowMenu} = useMenuBars()
 
     return (
-        <div className={`relative z-40`}>
+        <div className={`relative z-40`} onClick={handleShowMenu}>
             <ToggleButton  value="justify" key="justify" >
                 <FormatAlignJustifyIcon sx={{ color: "white", fontSize: "50px" }} />
             </ToggleButton>

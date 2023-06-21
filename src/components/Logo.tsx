@@ -5,7 +5,7 @@ import LocalCafeTwoToneIcon from '@mui/icons-material/LocalCafeTwoTone';
 
 type Props = {}
 
-const HeaderOPtions = (props: Props) => {
+const Logo = (props: Props) => {
     return (
         <div className='flex flex-row justify-between items-center '>
             <div className='logo gap-4 flex text-white'>
@@ -16,4 +16,4 @@ const HeaderOPtions = (props: Props) => {
     )
 }
 
-export default HeaderOPtions
+export default Logo

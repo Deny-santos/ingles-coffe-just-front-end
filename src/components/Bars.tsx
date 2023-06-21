@@ -10,12 +10,14 @@ import RecordVoiceOverSharpIcon from '@mui/icons-material/RecordVoiceOverSharp';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
+import HomeIcon from '@mui/icons-material/Home';
+
 import Image from 'next/image';
 
 import { svgBars } from '../../public';
 
 type Props = {}
-// <CloseIcon className='text-white' />
+
 const Bars = (props: Props) => {
 
     const { handleShowMenu, showBars } = useMenuBars()
@@ -29,6 +31,11 @@ const Bars = (props: Props) => {
                 <MyToggleButton  />
             </div>
             <ul className={`w-full flex h-full flex-col justify-evenly mt-4 z-20`}>
+            <LiMenuBars href='/'>
+                        <HomeIcon />
+                        <span>Home</span>
+                </LiMenuBars>
+
                 <LiMenuBars href='main'>
                         <TranslateIcon />
                         <span>Palavras</span>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Sriracha&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --gradient-main:  radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+// ============ utils ==============
+.bg-gradient {
+    background-color: var(--gradient-main);
+}

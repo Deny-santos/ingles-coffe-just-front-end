@@ -8,13 +8,7 @@
 
 
 :root {
-    --background-dark: #0909096a;
-    --background-light: #FFFFFF;
-
-    --text-light-soft: #CFD1D4;
-    --text-dark-soft: #B3BCC9;
-    --text-light: #0F172A; 
-    --text-dark: #E2E8F0;
+    --gradient-main:  radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
 }
 
 *{
@@ -36,7 +30,7 @@ body {
 }
 
 .img {
-    background: radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
+    background: var(--gradient-main);
     /* background-color: #0000006e; */
     
 }
@@ -53,4 +47,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Sriracha', cursive;
+}
+
+
+
+// ============ utils ==============
+.bg-gradient {
+    background-color: var(--gradient-main);
 }
