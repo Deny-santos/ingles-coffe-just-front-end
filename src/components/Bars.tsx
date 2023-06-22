@@ -41,7 +41,7 @@ const Bars = (props: Props) => {
                                         <span>Palavras</span>
                                 </LiMenuBars>
 
-                                <LiMenuBars href='main#expresions'>
+                                <LiMenuBars href='main#expressions'>
                                         <RecordVoiceOverSharpIcon />
                                         <span>Expressões</span>
                                 </LiMenuBars>

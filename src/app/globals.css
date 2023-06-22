@@ -50,14 +50,28 @@ body {
 }
 
 
-
-
-
 .bg-gradient {
     background-color: radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
 }
 
-.test {
-    background-color: #572eb7;
-    backdrop-filter: blur(15px);
+.animation-focus {
+    animation: focus 1s;
+    background-color: initial;
+}
+@keyframes focus {
+    0% {
+        background-color: initial;
+    }
+    25%{
+        background-color: rgb(245, 245, 125);
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: rgb(245, 245, 125);
+    }
+    100%{
+        background-color: initial;
+    }
 }
