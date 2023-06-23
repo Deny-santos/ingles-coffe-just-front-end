@@ -12,6 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      boxSizing: 'border-box',
       scrollBehavior: {
         smooth: 'smooth',
       },
@@ -35,6 +36,9 @@ module.exports = {
       },
       yellows: {
         50: "#cfe71e"
+      },
+      trasparent: {
+        50: "transparent"
       },
       blue: {
         50: '#2d69e1',

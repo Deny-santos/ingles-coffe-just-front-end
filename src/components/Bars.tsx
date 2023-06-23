@@ -46,7 +46,7 @@ const Bars = (props: Props) => {
                                         <span>Expressões</span>
                                 </LiMenuBars>
 
-                                <LiMenuBars href='main'>
+                                <LiMenuBars href='main#footer'>
                                         <CallOutlinedIcon />
                                         <span>Contato</span>
                                 </LiMenuBars>

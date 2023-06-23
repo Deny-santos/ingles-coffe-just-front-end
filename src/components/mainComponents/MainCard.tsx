@@ -27,6 +27,7 @@ function MainCard({ number, type, href }: Props) {
     }, [])
 
     return (
+
         <>
             {isLoading ? (
 

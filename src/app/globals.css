@@ -54,24 +54,18 @@ body {
     background-color: radial-gradient(circle at top left, #3700ff, #c41515, #6600cc);
 }
 
-.animation-focus {
+.animation-focusWords, .animation-focusExpressions {
     animation: focus 1s;
     background-color: initial;
 }
 @keyframes focus {
     0% {
-        background-color: initial;
-    }
-    25%{
-        background-color: rgb(245, 245, 125);
+        background-color: transparent;
     }
     50%{
-        background-color: yellow;
-    }
-    75%{
-        background-color: rgb(245, 245, 125);
+        background-color: rgb(230, 230, 201);
     }
     100%{
-        background-color: initial;
+        background-color: transparent;
     }
 }

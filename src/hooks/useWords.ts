@@ -17,13 +17,7 @@ export type Expressions = {
 const useWords = () => {
     const [words, setWords] = useState<Words[]>([])
     const [expressions, setExpressions] = useState<Expressions[]>([])
-    const [animated, setAnimated] = useState(false)
 
-    const handleFocus = () => {
-        setInterval(() => {
-            setAnimated(true);
-        },1000)
-    }
 
 
     useEffect(() => {
@@ -40,7 +34,7 @@ const useWords = () => {
         getUser()
     }, [])
     return {
-        animated, expressions, words, handleFocus, setAnimated, setExpressions, setWords 
+        expressions, words, setExpressions, setWords 
     }
 }
 
