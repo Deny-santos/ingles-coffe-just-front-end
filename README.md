@@ -28,15 +28,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 </div>
 
 <div align="center">
-    <img src="./public/pro7.png.png">
+    <img src="./public/pro7.png">
 </div>
 
 <div align="center">
-    <img src="./public/pro5.png.png">
+    <img src="./public/pro5.png">
 </div>
 
 <div align="center">
-    <img src="./public/pro6.png.png">
+    <img src="./public/pro6.png">
 </div>
 
 <div align="center">
