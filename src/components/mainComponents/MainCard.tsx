@@ -9,8 +9,8 @@ type Props = {
     type: "Palavras" | "Expressões"
     href: string
 }
-const words = "Nas palavras você pode escolher entre o metodo de ver a Palavra e depois ver a tradução ou ja ter todas as traduções liberadas"
-const Expressions = "Nas Expressões você pode escolher entre o metodo de ver a Expressão e depois ver a tradução ou ja ter todas as traduções liberadas"
+const words = "Aprenda as palavras mais usadas no inglês, começar pela base é importante, portanto veja, e reveja quantas vezes forem necessarias, bons estudos."
+const Expressions = "no ingles, assim como no Português, diversas expressões podem parecer não fazer sentido quando se escuta pela primeira vez, então aqui vai uma ajudinha."
 
 function MainCard({ number, type, href }: Props) {
 

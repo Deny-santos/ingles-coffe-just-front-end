@@ -23,23 +23,20 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-
-<div align="center">
-    <video width="640" height="480" controls>
-    <source src="./public/vid-presentation.mp4" type="video/mp4">
-    Seu navegador não suporta o elemento de vídeo.
-  </video>
-</div>
 <div align="center">
     <img src="./public/pro1.png">
 </div>
 
 <div align="center">
-    <img src="./public/pro2.png">
+    <img src="./public/pro7.png.png">
 </div>
 
 <div align="center">
-    <img src="./public/pro3.png">
+    <img src="./public/pro5.png.png">
+</div>
+
+<div align="center">
+    <img src="./public/pro6.png.png">
 </div>
 
 <div align="center">

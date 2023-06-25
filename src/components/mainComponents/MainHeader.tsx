@@ -19,7 +19,7 @@ const MainHeader = (props: Props) => {
 
     return (
         <header 
-            className={`flex items-center gap-6 px-4 fixed top-0 w-[100vw] backdrop-blur-md`} 
+            className={`flex items-center gap-6 px-4 fixed top-0 w-[100vw] backdrop-blur-md z-20`} 
             onClick={() => showBars? setShowBars(!showBars): ""}>
                 <span className='relative z-10'>
                     <MyToggleButton isLight={!darkMode} />
