@@ -1,10 +1,16 @@
 import React from 'react'
-import ClipLoader from "react-spinners/ClipLoader"
+import ClipLoader from "react-spinners/BeatLoader"
 
 
 const Spinner = () => {
     return (
-        <div>spinner</div>
+        <div>
+            <ClipLoader color={"white"}
+                loading={true}
+
+            />
+
+        </div>
     )
 }
 

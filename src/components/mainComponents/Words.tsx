@@ -1,13 +1,13 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import axios from "axios"
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import useTheme from '@/hooks/useTheme';
 import useWords, { Words, Expressions } from '@/hooks/useWords';
+import Spinner from '../Spinner';
 
 
 
@@ -15,14 +15,30 @@ type Props = {}
 
 function Words({ }: Props) {
 
+    const [isLoading, setIsloading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsloading(false)
+        },2000)
+
+        setIsloading(true)
+    }, [])
+
     const { darkMode } = useTheme()
     const { expressions, words }  = useWords()
 
     return (
-        <section className='flex items-center mt-20 border-box overflow-x-hidden'>
+        <section className='flex items-center mt-14 border-box overflow-x-hidden'>
             <div className='flex flex-col sm:flex-row   bg-blue-100 w-[90%] max-w-[] m-auto gap-1 text-[30px] rounded-2xl '>
-
-                <div 
+                {isLoading ? (
+                    <div className='flex justify-center items-center flex-1'>
+                        <Spinner/>
+                    </div>
+                    
+                ): (
+                    <>
+                        <div 
                     id='words'
                     className={`
                     text-[18px] md:text-[22px] lg:text-[30px]
@@ -67,6 +83,9 @@ function Words({ }: Props) {
                         </div>
                     ))}
                 </div>
+                    </>
+                )}
+                
 
             </div>
         </section>

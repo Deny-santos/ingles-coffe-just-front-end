@@ -7,6 +7,7 @@ import UserName from "@/components/mainComponents/UserName"
 import CardSesion from "@/components/mainComponents/CardSesion"
 import useTheme from "@/hooks/useTheme"
 import MainFooter from './MainFooter'
+import Spinner from '../Spinner'
 
 type Props = {}
 

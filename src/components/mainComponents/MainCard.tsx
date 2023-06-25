@@ -15,8 +15,6 @@ const Expressions = "Nas Expressões você pode escolher entre o metodo de ver a
 function MainCard({ number, type, href }: Props) {
 
     const [isLoading, setIsloading] = useState(true)
-    
-    const { darkMode } = useTheme()
 
     useEffect(() => {
         setTimeout(() => {
@@ -27,7 +25,6 @@ function MainCard({ number, type, href }: Props) {
     }, [])
 
     return (
-
         <>
             {isLoading ? (
 
