@@ -9,7 +9,8 @@ const useName = () => {
     }
 
     const { name: initialName, setName, email, setEmail } = userContext;
-    const userName = localStorage.getItem('name') || '';
+    const userName = typeof localStorage !== 'undefined' ? localStorage.getItem('name') : '';
+    //  antes de acessar o localStorage, é feita uma verificação usando typeof localStorage !== 'undefined' para garantir que o código seja executado apenas no navegador, onde o localStorage está disponível
 
     useEffect(() => {
         if (userName) {
@@ -18,11 +19,13 @@ const useName = () => {
     }, [userName, setName]);
 
     const handleSubmit = () => {
-        localStorage.setItem('name', initialName);
+        if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('name', initialName);
+        }
         setName(initialName);
     };
 
-    return { name: initialName, setName, handleSubmit, userName, setEmail, email  };
+    return { name: initialName, setName, handleSubmit, userName, email, setEmail };
 };
 
 export default useName;
