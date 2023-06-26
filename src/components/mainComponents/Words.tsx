@@ -6,8 +6,8 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import useTheme from '@/hooks/useTheme';
-import useWords, { Words, Expressions } from '@/hooks/useWords';
 import Spinner from '../Spinner';
+import { expression, words } from "../../utils/english"
 
 
 
@@ -26,7 +26,6 @@ function Words({ }: Props) {
     }, [])
 
     const { darkMode } = useTheme()
-    const { expressions, words }  = useWords()
 
     return (
         <section className='flex items-center mt-14 border-box overflow-x-hidden'>
@@ -46,7 +45,7 @@ function Words({ }: Props) {
                     ${darkMode ? "bg-dark-100 text-light-50" : "bg-light-200 text-dark-50"} 
                     
                 `} >
-                    {words.map((all: Words, i: number) => (
+                    {words.map((all: any, i: number) => (
                         <div key={i} className='flex gap-1 md:gap-3'>
                             <span className='text-green-50'>
                                 <CheckCircleOutlineOutlinedIcon />
@@ -68,7 +67,7 @@ function Words({ }: Props) {
                     border border-blue-100 rounded-e-2xl gap-9
                     ${darkMode ? "bg-dark-100 text-light-50": "bg-light-200"}
                 `}>
-                    {expressions.map((all: Expressions, i: number) => (
+                    {expression.map((all: any, i: number) => (
                         <div key={i} className='flex gap-1 md:gap-3 max-w-[90%]'>
                             <span className='text-purple-50'>
                                 <CheckCircleOutlineOutlinedIcon />

@@ -1,28 +1,28 @@
-'use client'
-
-import React, { useContext } from 'react'
-import { UserContext } from '@/context/user'
-
+import React, { useContext, useEffect } from 'react';
+import { UserContext } from '@/context/user';
 
 const useName = () => {
-
-    
-    const userContext = useContext(UserContext)
+    const userContext = useContext(UserContext);
 
     if (!userContext) {
         throw new Error('Error: Missing context value');
     }
-    const { email, name, setEmail, setName } = userContext
-    localStorage.setItem("name", name)
-    const userName = localStorage.getItem("name")
+
+    const { name: initialName, setName, email, setEmail } = userContext;
+    const userName = localStorage.getItem('name') || '';
+
+    useEffect(() => {
+        if (userName) {
+            setName(userName);
+        }
+    }, [userName, setName]);
 
     const handleSubmit = () => {
-        console.log(useName)
-    }
+        localStorage.setItem('name', initialName);
+        setName(initialName);
+    };
 
-    return {
-        name, email, setName, setEmail, handleSubmit, userName
-    }
-}
+    return { name: initialName, setName, handleSubmit, userName, setEmail, email  };
+};
 
-export default useName
+export default useName;

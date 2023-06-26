@@ -1,19 +1,24 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainHeader from "@/components/mainComponents/MainHeader"
 import Words from "@/components/mainComponents/Words"
 import UserName from "@/components/mainComponents/UserName"
 import CardSesion from "@/components/mainComponents/CardSesion"
 import useTheme from "@/hooks/useTheme"
 import MainFooter from './MainFooter'
-import Spinner from '../Spinner'
+import useName from '@/hooks/useName'
 
 type Props = {}
 
 function MainWrapper({ }: Props) {
 
     const {darkMode, setDarkMode} = useTheme()
+    const {name} =  useName()
+
+    useEffect(() => {
+        console.log(name)
+    })
 
     return (
         <main className={`

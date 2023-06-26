@@ -40,5 +40,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 </div>
 
 <div align="center">
+    <img src="./public/pro2.png">
+</div>
+
+<div align="center">
     <img src="./public/pro4.png">
 </div>
+

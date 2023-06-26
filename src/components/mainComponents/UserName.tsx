@@ -9,14 +9,14 @@ type Props = {}
 
 const UserName = (props: Props) => {
 
-    const { name, userName } = useName()
+    const { name } = useName()
     const { darkMode } = useTheme()
 
 
     return (
         <div className='flex max-w-screen items-center justify-end p-5 pr-10'>
             <span className={`${darkMode ? "text-light-50" : "text-dark-150"} font-semibold text-[22px]`}>
-                Olá {userName || ""}, seja bem vindo <WavingHandIcon/>
+                Olá {name || ""}, seja bem vindo <WavingHandIcon/>
             </span>
         </div>
     )

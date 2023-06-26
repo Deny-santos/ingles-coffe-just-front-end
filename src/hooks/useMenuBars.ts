@@ -16,7 +16,7 @@ const useMenuBars = () => {
 
     const handleShowMenu = () => {
         setShowBars(!showBars)
-        console.log(showBars)
+        console.log()
     }
     return {
         showBars, setShowBars, handleShowMenu
