@@ -50,16 +50,6 @@ const Bars = (props: Props) => {
                                         <CallOutlinedIcon />
                                         <span>Contato</span>
                                 </LiMenuBars>
-
-                                <LiMenuBars href='main'>
-                                        <DescriptionOutlinedIcon />
-                                        <span>Sobre</span>
-                                </LiMenuBars>
-
-                                <LiMenuBars href='main'>
-                                        <AttachMoneyOutlinedIcon />
-                                        <span>Promoções</span>
-                                </LiMenuBars>
                         </ul>
                         <div className='absolute top-0 bg-[#09090952] h-full left-0 flex items-end z-10'>
                                 <Image src={svgBars} alt='svg do menu' className='relative z-0 max-w-full ml-16' />

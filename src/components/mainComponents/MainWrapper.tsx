@@ -8,12 +8,15 @@ import CardSesion from "@/components/mainComponents/CardSesion"
 import useTheme from "@/hooks/useTheme"
 import MainFooter from './MainFooter'
 import useName from '@/hooks/useName'
+import useMenuBars from '@/hooks/useMenuBars'
 
 type Props = {}
 
 function MainWrapper({ }: Props) {
 
-    const {darkMode, setDarkMode} = useTheme()
+    const {darkMode} = useTheme()
+    const { setShowBars, showBars } = useMenuBars()
+
     const {name} =  useName()
 
     useEffect(() => {
@@ -21,13 +24,11 @@ function MainWrapper({ }: Props) {
     })
 
     return (
-        <main className={`
+        <main
+            onClick={() => showBars ? setShowBars(false): ""}
+            className={`
             min-h-screen max-w-[100vw] scroll-smooth pt-20 overflow-x-hidden
-            ${darkMode ? `
-                dark:bg-dark-100
-            ` : `
-                bg-light-200
-            `}
+            ${darkMode ? "bg-dark-100": "bg-light-200"}
         `}>
             <MainHeader />
             <UserName />
