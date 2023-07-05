@@ -10,7 +10,7 @@ type Props = {
     href: string
 }
 const words = "Aprenda as palavras mais usadas no inglês, começar pela base é importante, portanto veja, e reveja quantas vezes forem necessarias, bons estudos."
-const Expressions = "no ingles, assim como no Português, diversas expressões podem parecer não fazer sentido quando se escuta pela primeira vez, então aqui vai uma ajudinha."
+const Expressions = "Em inglês, assim como em Português, diversas expressões podem parecer não fazer sentido quando se escuta pela primeira vez, então aqui vai uma ajudinha."
 
 function MainCard({ number, type, href }: Props) {
 

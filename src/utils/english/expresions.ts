@@ -6,6 +6,7 @@ export const expression = [
     { expression: "Bite the bullet", translation: "Enfrentar uma situação difícil com coragem" },
     { expression: "Let the cat out of the bag", translation: "Revelar um segredo" },
     { expression: "On the ball", translation: "Atento e alerta" },
+    { expression: "Run away", translation: "Fugir" },
     { expression: "Spill the beans", translation: "Revelar informações confidenciais" },
     { expression: "The ball is in your court", translation: "A bola está com você" },
     { expression: "All ears", translation: "Atento, ouvindo com atenção" },

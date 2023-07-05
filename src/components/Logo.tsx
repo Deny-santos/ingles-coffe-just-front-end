@@ -15,7 +15,7 @@ const Logo = ({isLight}: Props) => {
                 ${isLight ? "text-dark-100" : "text-light-50"}
             `}>
                 <span><LocalCafeTwoToneIcon className='text-[42px]' /></span>
-                <span className='text-[30px] '>Ingles Coffe</span>
+                <span className='sm:text-[30px] md:text-[25px] text-[20px] '>Ingles Coffe</span>
             </div>  
         </div>
     )

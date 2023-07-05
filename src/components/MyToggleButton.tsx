@@ -17,7 +17,7 @@ const MyToggleButton = ({isLight}: Props) => {
     return (
         <div className={`relative z-40`} onClick={handleShowMenu}>
             <ToggleButton  value="justify" key="justify" >
-                <FormatAlignJustifyIcon sx={{ fontSize: "50px" }} className={`
+                <FormatAlignJustifyIcon sx={{ fontSize: "40px" }} className={`
                     ${isLight? "text-dark-150": "text-light-50"}
                 `}/>
             </ToggleButton>

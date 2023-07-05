@@ -3,6 +3,7 @@ import { BarProvider } from "../../context/bars"
 import { UserProvider } from "../../context/user"
 import { DarkProvider } from "../../context/theme"
 import { FocusProvider } from "../../context/focus"
+import { ReverseProvider } from "../../context/reverse"
 
 
 
@@ -16,7 +17,9 @@ const MainContent = () => {
             <UserProvider>
                 <DarkProvider>
                     <FocusProvider>
-                        <MainWrapper />
+                        <ReverseProvider>
+                            <MainWrapper />
+                        </ReverseProvider>
                     </FocusProvider>
                 </DarkProvider>
             </UserProvider>
