@@ -28,11 +28,13 @@ function MainWrapper({ }: Props) {
         <main
             onClick={() => showBars ? setShowBars(false) : ""}
             className={`
-            min-h-screen max-w-[100vw] scroll-smooth pt-20 overflow-x-hidden
+            min-h-screen max-w-[100vw] pt-20 overflow-x-hidden
             ${darkMode ? "bg-dark-100" : "bg-light-200"}
-        `}>
+            `}
+            style={{ scrollBehavior: "smooth" }}
+        >
             <MainHeader />
-            <MainOptionsContainer/>
+            <MainOptionsContainer />
             <UserName />
             <CardSesion />
             <Words />

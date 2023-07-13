@@ -8,11 +8,9 @@ type Props = {
 
 function MainOptions({ href = "#", value,}: Props) {
 
-    const style = "bg-blue-100 text-light-50 py-[5px] px-[10px] text-[14px] rounded-md"
-
     return (
         <>
-            <a className={`${style}`} href={href}>
+            <a className={`bg-blue-100 text-light-50 py-[5px] px-[10px] text-[14px] rounded-md border-[0.5px]`} href={href}>
                 {value}
             </a>
         </>
