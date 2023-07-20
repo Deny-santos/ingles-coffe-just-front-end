@@ -5,12 +5,7 @@ import { DarkProvider } from "../../context/theme"
 import { FocusProvider } from "../../context/focus"
 import { ReverseProvider } from "../../context/reverse"
 
-
-
-
 const MainContent = () => {
-
-
 
     return (
         <BarProvider>

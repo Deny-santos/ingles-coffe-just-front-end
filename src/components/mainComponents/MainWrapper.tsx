@@ -1,28 +1,20 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import MainHeader from "@/components/mainComponents/MainHeader"
 import Words from "@/components/mainComponents/Words"
 import UserName from "@/components/mainComponents/UserName"
 import CardSesion from "@/components/mainComponents/CardSesion"
 import useTheme from "@/hooks/useTheme"
 import MainFooter from './MainFooter'
-import useName from '@/hooks/useName'
 import useMenuBars from '@/hooks/useMenuBars'
 import MainOptionsContainer from './MainOptionsContainer'
 
-type Props = {}
 
-function MainWrapper({ }: Props) {
+function MainWrapper() {
 
     const { darkMode } = useTheme()
     const { setShowBars, showBars } = useMenuBars()
-
-    const { name } = useName()
-
-    useEffect(() => {
-        console.log(name)
-    })
 
     return (
         <main

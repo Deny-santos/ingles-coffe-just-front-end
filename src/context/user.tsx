@@ -8,7 +8,6 @@ type Props = {
 
 type UserContextType = {
     name: string;
-    // isLogged: React.Dispatch<React.SetStateAction<boolean>>;
     setName: any;
     email: string;
     setEmail: any;

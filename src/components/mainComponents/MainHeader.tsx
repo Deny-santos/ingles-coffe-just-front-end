@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import Bars from '../Bars'
 import MyToggleButton from '../MyToggleButton'
@@ -9,9 +7,7 @@ import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
 import useTheme from '@/hooks/useTheme'
 
-type Props = {}
-
-const MainHeader = (props: Props) => {
+const MainHeader = () => {
 
     const { setShowBars, showBars} = useMenuBars()
     

@@ -3,24 +3,20 @@
 import React, { useEffect, useState } from 'react'
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-
 import 'react-loading-skeleton/dist/skeleton.css'
 import useTheme from '@/hooks/useTheme';
 import Spinner from '../Spinner';
 import { expression, words } from "../../utils/english"
 
 
-
-type Props = {}
-
-function Words({ }: Props) {
+function Words() {
 
     const [isLoading, setIsloading] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setIsloading(false)
-        },2000)
+        },1000)
 
         setIsloading(true)
     }, [])
@@ -28,7 +24,7 @@ function Words({ }: Props) {
     const { darkMode } = useTheme()
 
     return (
-        <section className='flex items-center mt-14 border-box overflow-x-hidden'>
+        <section className='flex items-center mt-8 border-box overflow-x-hidden'>
             <div className='flex flex-col sm:flex-row   bg-blue-100 w-[90%] max-w-[] m-auto gap-1 text-[30px] rounded-2xl '>
                 {isLoading ? (
                     <div className='flex justify-center items-center flex-1'>
@@ -53,7 +49,7 @@ function Words({ }: Props) {
                             <span className='capitalize'>
                                 {all.word} 
                                 <ArrowRightAltIcon/> 
-                                <span className='text-light-500'>{all.translate}</span>
+                                <span className='text-light-500'>{all.translation}</span>
                             </span>
                             
                         </div>

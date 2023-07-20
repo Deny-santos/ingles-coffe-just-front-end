@@ -1,25 +1,12 @@
-'use client'
-
 import React from 'react'
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
-import ToggleButton from '@mui/material/ToggleButton';
-import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
 import Tooltip from '@mui/material/Tooltip';
-
 import Logo from './Logo';
-import { Button } from '@mui/material';
-import useMenuBars from '@/hooks/useMenuBars';
 import MyToggleButton from './MyToggleButton';
 
 
-
-type Props = {}
-
-const Header = (props: Props) => {
-
-    const {handleShowMenu} = useMenuBars()
-
+const Header = () => {
     return (
         <div className={`
             flex flex-1 text-white absolute w-screen h-[90px] 
@@ -28,9 +15,11 @@ const Header = (props: Props) => {
             <div className='z-10'>
                 <MyToggleButton/>
             </div>
+            
             <div className='w-full hidden md:flex'>
                 <Logo />
             </div>
+
             <div className='items-center'>
                 <a
                     href="/main"

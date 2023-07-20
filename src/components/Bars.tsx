@@ -1,24 +1,16 @@
-'use client'
-
 import React from 'react'
 import MyToggleButton from './MyToggleButton';
 import useMenuBars from '@/hooks/useMenuBars';
 import LiMenuBars from './LiMenuBars';
-
 import TranslateIcon from '@mui/icons-material/Translate';
 import RecordVoiceOverSharpIcon from '@mui/icons-material/RecordVoiceOverSharp';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
-import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 import HomeIcon from '@mui/icons-material/Home';
-
 import Image from 'next/image';
 
 import { svgBars } from '../../public';
 
-type Props = {}
-
-const Bars = (props: Props) => {
+const Bars = () => {
 
         const { handleShowMenu, showBars } = useMenuBars()
 

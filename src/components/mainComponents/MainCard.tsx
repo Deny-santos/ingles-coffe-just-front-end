@@ -1,6 +1,5 @@
 'use client'
 
-import useTheme from '@/hooks/useTheme'
 import React, { useEffect, useState } from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 
@@ -19,7 +18,7 @@ function MainCard({ number, type, href }: Props) {
     useEffect(() => {
         setTimeout(() => {
             setIsloading(false)
-        },1000)
+        },200)
 
         setIsloading(true)
     }, [])
@@ -92,8 +91,6 @@ function MainCard({ number, type, href }: Props) {
                 </div >
 
             )}
-
-
         </>
     )
 }

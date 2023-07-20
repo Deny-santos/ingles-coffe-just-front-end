@@ -6,7 +6,6 @@ import { DarkContext } from '@/context/theme'
 
 const useTheme = () => {
 
-    
     const darkContext = useContext(DarkContext)
 
     if (!darkContext) {
@@ -14,7 +13,6 @@ const useTheme = () => {
     }
     
     const { darkMode, setDarkMode } = darkContext
-
 
     const handleSetDarkMode = () => {
         setDarkMode(!darkMode)

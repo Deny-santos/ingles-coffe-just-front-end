@@ -1,6 +1,3 @@
-'use client'
-
-
 import ToggleButton from '@mui/material/ToggleButton';
 import FormatAlignJustifyIcon from '@mui/icons-material/FormatAlignJustify';
 import useMenuBars from '@/hooks/useMenuBars';
@@ -10,7 +7,6 @@ type Props = {
 }
 
 const MyToggleButton = ({isLight}: Props) => {
-
 
     const {handleShowMenu} = useMenuBars()
 

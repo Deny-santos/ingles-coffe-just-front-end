@@ -8,7 +8,6 @@ const Spinner = () => {
             <ClipLoader color={"white"}
                 loading={true}
             />
-
         </div>
     )
 }

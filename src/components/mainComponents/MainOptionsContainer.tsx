@@ -1,14 +1,8 @@
-'use client'
-
-import React, {useState} from 'react'
+import React from 'react'
 import MainOptions from './MainOptions'
-import useReverseWord from '@/hooks/useReverseWord';
 
-type Props = {}
 
-function MainOptionsContainer({ }: Props) {
-
-    const {setReverse, handleSetReverse, reverse } = useReverseWord()
+function MainOptionsContainer() {
 
     return (
         <div className='flex sm:hidden  gap-2 justify-around '>

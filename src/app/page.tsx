@@ -4,9 +4,7 @@ import { UserProvider } from "../context/user"
 
 
 export default function HomePage() {
-
-
-
+  
   return (
     <BarProvider >
       <UserProvider>

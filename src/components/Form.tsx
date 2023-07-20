@@ -1,12 +1,9 @@
-'use client'
-
 import useName from '@/hooks/useName'
 import { TextField } from '@mui/material'
 import React from 'react'
 
-type Props = {}
 
-function Form({ }: Props) {
+function Form() {
 
     const {email, name, setEmail, setName, handleSubmit} = useName()
 

@@ -6,9 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Icons from './Icons';
 import Logo from '../Logo';
 
-type Props = {}
-
-function MainFooter({ }: Props) {
+function MainFooter() {
 
     const { darkMode } = useTheme()
 
