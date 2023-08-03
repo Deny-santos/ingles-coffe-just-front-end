@@ -81,7 +81,7 @@ function MainCard({ number, type, href }: Props) {
                             w-full flex items-center justify-end
                         `}>
                             <a href={href} className={`
-                                bg-blue-100 text-light-50 py-2 px-14 rounded-lg font-semibold
+                                bg-blue-50 text-light-50 py-2 px-14 rounded-lg font-semibold
                             `}>
                                 Explorar
                             </a>

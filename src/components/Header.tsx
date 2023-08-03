@@ -32,7 +32,7 @@ const Header = () => {
             </div>
 
             <div className='flex  items-center justify-around'>
-                <Tooltip title="Veja Minhas Redes Sociais" enterDelay={500} leaveDelay={200}>
+                <Tooltip title="Veja Minhas Redes Sociais No Rodapé, Apos clicar Em Começar" enterDelay={500} leaveDelay={200}>
                     <Badge badgeContent={1} color="primary">
                         <MailIcon sx={{ cursor: "pointer", color: "white" }} />
                     </Badge>

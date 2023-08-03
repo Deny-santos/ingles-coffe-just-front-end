@@ -17,7 +17,7 @@ const Bars = () => {
         return (
                 <div className={` 
                         duration-700 flex flex-col absolute top-0  py-4 overflow-hidden bg-blue-150
-                        ${showBars ? "left-0" : "left-[-1000px]"} min-h-screen  w-[80%] md:w-[500px] z-20
+                        ${showBars ? "left-0" : "left-[-1000px]"} min-h-screen  w-[80%] md:w-[500px] z-50
                 `}>
                         <div className='ml-10 -mt-2' onClick={handleShowMenu}>
                                 <MyToggleButton />
@@ -40,7 +40,7 @@ const Bars = () => {
 
                                 <LiMenuBars href='main#footer'>
                                         <CallOutlinedIcon />
-                                        <span>Contato</span>
+                                        <span>Contatos</span>
                                 </LiMenuBars>
                         </ul>
                         <div className='absolute top-0 bg-[#09090952] h-full left-0 flex items-end z-10'>

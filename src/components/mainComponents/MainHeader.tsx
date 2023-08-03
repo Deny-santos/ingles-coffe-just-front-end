@@ -21,7 +21,7 @@ const MainHeader = () => {
                     <MyToggleButton isLight={!darkMode} />
                 </span>
                 <div>
-                    <Logo isLight={!darkMode}/>
+                    <Logo path='/main' isLight={!darkMode}/>
                 </div>
                 <Bars />
                 <span >

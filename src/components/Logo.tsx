@@ -3,19 +3,20 @@ import LocalCafeTwoToneIcon from '@mui/icons-material/LocalCafeTwoTone';
 
 type Props = {
     isLight?: boolean
+    path?: string
 }
 
-const Logo = ({isLight}: Props) => {
+const Logo = ({isLight, path}: Props) => {
     return (
-        <div className='flex flex-row justify-between items-center '>
+        <a href={path || "#"} className='flex flex-row justify-between items-center '>
             <div className={`
                 logo gap-4 flex items-center
                 ${isLight ? "text-dark-100" : "text-light-50"}
             `}>
                 <span><LocalCafeTwoToneIcon className='text-[42px]' /></span>
-                <span className='sm:text-[30px] md:text-[25px] text-[20px] '>Ingles Coffe</span>
+                <span className='sm:text-[30px] md:text-[25px] text-[20px] '>Inglês Coffee</span>
             </div>  
-        </div>
+        </a>
     )
 }
 

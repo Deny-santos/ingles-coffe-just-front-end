@@ -23,9 +23,9 @@ function MainFooter() {
             </div>
 
             <div className='flex gap-5  '>
-                <Icons Icon={GitHubIcon} />
-                <Icons Icon={WhatsAppIcon} />
-                <Icons Icon={InstagramIcon} />
+                <Icons href='https://github.com/Deny-santos' Icon={GitHubIcon} />
+                <Icons href='https://api.whatsapp.com/send?phone=7998459078' Icon={WhatsAppIcon} />
+                <Icons href='https://www.instagram.com/denysantoz/' Icon={InstagramIcon} />
             </div>
             
             <div className={`
