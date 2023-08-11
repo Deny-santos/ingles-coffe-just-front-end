@@ -15,7 +15,7 @@ function Home() {
     const {setShowBars, showBars} = useMenuBars()
 
     return (
-        <div className="page" onClick={() => showBars ? setShowBars(false): ""}>
+        <div className="page pb-6" onClick={() => showBars ? setShowBars(false): ""}>
             <div className="img max-w-[100%] w-screen absolute top-0 h-screen z-10 overflow-x-hidden">
                 <Header />
                 <Bars />
@@ -31,6 +31,7 @@ function Home() {
                     <div className="flex flex-1 flex-col items-center justify-center gap-5 max-w-[90%] pb-10 w-[100%]  mx-auto ml-[14%]">
                         <h1 className="text-light-50 md:text-[30px] text-[25px] font-semibold" >Aprenda Inglês De Forma Fácil</h1>
                         <Form/>
+                        <span className='text-light-100 font-semibold'>- Novas Palavras e Expressões Toda Semana -</span>
                     </div>
                 </div>
 

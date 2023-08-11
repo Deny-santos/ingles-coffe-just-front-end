@@ -9,7 +9,7 @@ function Form() {
 
     return (
         <form className={`
-        flex flex-1 flex-col items-center justify-center  gap-6 
+        flex flex-1 flex-col items-center justify-center  gap-6 py-6 px-3
         shadow-xl bg-[#ffffffba] rounded-lg md:w-[80%] max-w-[100%] w-[100%] xl:w-[50%]
     `}>
             <div>
@@ -38,6 +38,7 @@ function Form() {
                 Começar
             </a>
         </form>
+        
     )
 }
 
