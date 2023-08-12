@@ -36,13 +36,14 @@ function Words() {
                         <div 
                     id='words'
                     className={`
-                    text-[18px] md:text-[22px] lg:text-[30px]
+                    text-[18px] md:text-[21px] lg:text-[25px]
                     flex flex-col flex-1 p-3 border border-blue-100 rounded-s-2xl gap-5
                     ${darkMode ? "bg-dark-100 text-light-50" : "bg-light-200 text-dark-50"} 
                     
                 `} >
                     {words.map((all: any, i: number) => (
                         <div key={i} className='flex gap-1 md:gap-3'>
+                            <span>{i+1}) </span>
                             <span className='text-green-50'>
                                 <CheckCircleOutlineOutlinedIcon />
                             </span>
@@ -59,12 +60,13 @@ function Words() {
                 <div 
                     id='expressions'
                     className={`
-                    flex flex-col flex-1 p-3 text-[18px] md:text-[22px] lg:text-[30px] 
+                    flex flex-col flex-1 p-3 text-[18px] md:text-[21px] lg:text-[25px] 
                     border border-blue-100 rounded-e-2xl gap-9
                     ${darkMode ? "bg-dark-100 text-light-50": "bg-light-200"}
                 `}>
                     {expression.map((all: any, i: number) => (
                         <div key={i} className='flex gap-1 md:gap-3 max-w-[90%]'>
+                            <span>{i+1}) </span>
                             <span className='text-purple-50'>
                                 <CheckCircleOutlineOutlinedIcon />
                             </span>

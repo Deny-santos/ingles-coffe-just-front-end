@@ -1,5 +1,7 @@
 export const words = [
     { word: "edges", translation: "bordas" },
+    { word: "bark", translation: "latir" },
+    { word: "Hanging", translation: "pendurada(o)" },
     { word: "wounds", translation: "ferimentos" },
     { word: "blood", translation: "sangue" },
     { word: "fade", translation: "desaparecer" },
@@ -33,7 +35,6 @@ export const words = [
     { word: "lick", translation: "lamber" },
     { word: "star", translation: "estrela" },
     { word: "arrow", translation: "cetas / flexas" },
-    { word: "street", translation: "rua" },
     { word: "fool", translation: "bobo / idiota" },
     { word: "city", translation: "cidade" },
     { word: "country", translation: "país" },
