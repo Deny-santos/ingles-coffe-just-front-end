@@ -5,13 +5,13 @@ import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 
 type Props = {
     number: number,
-    type: "Palavras" | "Expressões"
-    href: string
+    title: string,
+    href: string,
+    text?: string,
 }
-const words = "Aprenda as palavras mais usadas no inglês, começar pela base é importante, portanto veja, e reveja quantas vezes forem necessarias, bons estudos."
-const Expressions = "Em inglês, assim como em Português, diversas expressões podem parecer não fazer sentido quando se escuta pela primeira vez, então aqui vai uma ajudinha."
 
-function MainCard({ number, type, href }: Props) {
+
+function MainCard({ number, title, href, text }: Props) {
 
     const [isLoading, setIsloading] = useState(true)
 
@@ -29,7 +29,7 @@ function MainCard({ number, type, href }: Props) {
 
                 <div className={`
                     flex flex-col gap-10
-                    w-[300px] h-[400px] rounded-lg p-5
+                    w-[220px] h-[320px] rounded-lg p-5
                     bg-dark-150
                 `}>
                     <SkeletonTheme baseColor="#202020" highlightColor="#444" >
@@ -50,30 +50,28 @@ function MainCard({ number, type, href }: Props) {
             ) : (
 
                 <div className={`
-                    flex flex-col gap-10 shadow-dark-150 shadow-2xl
-                    w-[300px] h-[400px] rounded-lg p-5
+                    flex flex-col gap-8 shadow-dark-150 shadow-2xl
+                    w-[220px] h-[320px] rounded-lg p-3
                     bg-gradient-to-br from-gradientDark-50 via-gradientDark-100 to-gradientDark-150
                 `}>
 
-                    <div className={`flex items-center justify-evenly`}>
+                    <div className={`flex items-center justify-evenly gap-3`}>
                         <div className={`
-                        w-[80px] h-[80px] flex items-center justify-center font-semibold
-                        bg-dark-100 text-light-50
-                        rounded-full
-                        text-[25px]
+                        min-w-[50px] h-[50px] flex items-center justify-center font-semibold
+                        bg-dark-100 text-light-50 rounded-full text-[25px]
                     `}>
                             {number}
                         </div>
 
-                        <h3 className={`font-semibold text-[25px] text-light-50`}>{type}</h3>
+                        <h3 className={`font-semibold text-[20px] text-light-50`}>{title}</h3>
                     </div>
 
 
                     <div className={`
-                        flex flex-col gap-10
+                        flex flex-col gap-6
                     `}>
-                        <p className={`text-light-50`}>
-                            {type === "Palavras" ? words : Expressions}
+                        <p className={`text-light-50 text-[18px]`}>
+                            {text}
                         </p>
 
 
@@ -81,7 +79,7 @@ function MainCard({ number, type, href }: Props) {
                             w-full flex items-center justify-end
                         `}>
                             <a href={href} className={`
-                                bg-blue-50 text-light-50 py-2 px-14 rounded-lg font-semibold
+                                bg-blue-50 text-light-50 py-2 px-10 rounded-lg font-semibold
                             `}>
                                 Explorar
                             </a>

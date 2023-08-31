@@ -7,6 +7,7 @@ import RecordVoiceOverSharpIcon from '@mui/icons-material/RecordVoiceOverSharp';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import HomeIcon from '@mui/icons-material/Home';
 import Image from 'next/image';
+import FormatColorTextIcon from '@mui/icons-material/FormatColorText';
 
 import { svgBars } from '../../public';
 
@@ -36,6 +37,11 @@ const Bars = () => {
                                 <LiMenuBars href='main#expressions'>
                                         <RecordVoiceOverSharpIcon />
                                         <span>Expressões</span>
+                                </LiMenuBars>
+
+                                <LiMenuBars href='main#text'>
+                                        <FormatColorTextIcon />
+                                        <span>Textos</span>
                                 </LiMenuBars>
 
                                 <LiMenuBars href='main#footer'>

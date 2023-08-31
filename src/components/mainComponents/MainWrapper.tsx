@@ -9,6 +9,9 @@ import useTheme from "@/hooks/useTheme"
 import MainFooter from './MainFooter'
 import useMenuBars from '@/hooks/useMenuBars'
 import MainOptionsContainer from './MainOptionsContainer'
+import Sentences from './Sentences'
+import H2 from './H2'
+import Separator from './Separator'
 
 
 function MainWrapper() {
@@ -20,7 +23,7 @@ function MainWrapper() {
         <main
             onClick={() => showBars ? setShowBars(false) : ""}
             className={`
-            min-h-screen max-w-[100vw] pt-20 overflow-x-hidden
+            min-h-screen max-w-[100vw] pt-20 overflow-x-hidden flex flex-col gap-5
             ${darkMode ? "bg-dark-100" : "bg-light-200"}
             `}
             style={{ scrollBehavior: "smooth" }}
@@ -29,7 +32,11 @@ function MainWrapper() {
             <MainOptionsContainer />
             <UserName />
             <CardSesion />
+            <H2 text='palavras e expressões'/>
             <Words />
+            <Separator/>
+            <H2 text='Textos'/>
+            <Sentences />
             <MainFooter />
         </main>
     )
