@@ -1,30 +1,26 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import React from 'react'
 import MainContainer from './MainContainer'
 import Container from './Container'
 import H2 from './H2'
 import Separator from './Separator'
 
-type Props = {}
-
-const Sentences = (props: Props) => {
+const Sentences = () => {
     return (
-        <div id='text'>
+        <div>
             <MainContainer>
                 <Container id='text'>
-                    <H2 text='A1' />
+                    <H2 text={`A1`} />
                     <p>
-                        {/* <p>Title: My Day at the Park</p> */}
-
                         Hi! My name is Sarah. Today is a sunny day. I go to the park with my dog, Max. Max is brown and small. He is very happy. We play fetch with a ball. I run, and Max runs too. We laugh a lot. I see my friend Lily. She has a kite. The kite is red and blue. It flies high in the sky. Lily and I eat sandwiches. I have cheese, and Lily has ham. We have fun. The sun goes down, and it gets dark. I go home with Max. We had a great day.
                     </p>
                 </Container>
 
 
-                <Container id='text'>
-                    <H2 text='A2' />
+                <Container >
+                    <H2 text={`A2`}  />
                     <p>
-                        {/* <p>Title: My Favorite Hobby</p> */}
-
                         Hello! I'm Alex. I want to tell you about my favorite hobby. I love cooking. Every Saturday, I go to the market to buy fresh vegetables and meat. I also get some spices, like salt, pepper, and herbs. In the kitchen, I put on my apron and start cooking. I usually make pasta with tomato sauce. First, I boil the water and add the pasta. While it's cooking, I chop the vegetables and cook the meat. Then, I mix everything together with the tomato sauce. The kitchen smells so good! I always taste a little to make sure it's delicious. After cooking, I invite my friends over for dinner. They say the food is tasty. Cooking makes me happy. I want to learn more recipes in the future.</p>
                 </Container>
             </MainContainer>
@@ -32,10 +28,9 @@ const Sentences = (props: Props) => {
             <Separator />
 
             <MainContainer>
-                <Container id='text'>
-                    <H2 text='B1' />
+                <Container >
+                    <H2 text={`b1`}  />
                     <p>
-                        {/* <p>Title: My Last Vacation</p> */}
 
                         Last summer, I had an amazing vacation with my family. We went to a beautiful beach resort. The weather was perfect, with clear blue skies and a gentle breeze. We stayed in a cozy cottage near the beach.
 
@@ -49,11 +44,9 @@ const Sentences = (props: Props) => {
                     </p>
                 </Container>
 
-                <Container id='text'>
-                    <H2 text='B2' />
+                <Container >
+                    <H2 text={`B2`}  />
                     <p>
-                        {/* <p>Title: The Impact of Technology on Society</p> */}
-
                         In recent years, technology has significantly transformed the way we live and interact with the world around us. Its impact on society is profound and multi-faceted.
 
                         One of the most noticeable effects is the way we communicate. With the rise of smartphones and social media, people are more connected than ever before. However, this connectivity has both positive and negative aspects. On one hand, it's easier to stay in touch with friends and family, no matter the distance. On the other hand, some argue that these digital interactions can sometimes lack the depth and authenticity of face-to-face conversations.
@@ -73,10 +66,9 @@ const Sentences = (props: Props) => {
             <Separator />
 
             <MainContainer>
-            <Container id='text'>
-                    <H2 text='C1' />
+                <Container >
+                    <H2 text={`C1`} />
                     <p>
-                        {/* Title: The Ethical Dilemmas of Genetic Engineering */}
 
                         Genetic engineering, the manipulation of an organism's DNA, has advanced significantly in recent years, bringing with it a multitude of ethical dilemmas and complex considerations.
 
@@ -95,10 +87,9 @@ const Sentences = (props: Props) => {
                 </Container>
 
 
-                <Container id='text'>
-                    <H2 text='C2' />
+                <Container >
+                    <H2 text={`C2`} />
                     <p>
-                        {/* Title: The Paradox of Choice in Modern Society */}
 
                         In our modern world, the abundance of choices in almost every aspect of life has become both a symbol of progress and a source of overwhelming complexity. This paradox of choice, as coined by psychologist Barry Schwartz, reveals the intricate dynamics between freedom, consumerism, and psychological well-being.
 
