@@ -1,4 +1,5 @@
 export const expression = [
+    { expression: "Shake a lrg", translation: "se apresse/ adiante" },
     { expression: "God Bless you", translation: "Saude / Deus abençoe" },
     { expression: "Not at all", translation: "De jeito nenhum" },
     { expression: "I'm on it", translation: "Pode deixar comigo" },
@@ -45,10 +46,8 @@ export const expression = [
     { expression: "Leave no stone unturned", translation: "Não deixar pedra sobre pedra" },
     { expression: "Miss the boat", translation: "Perder uma oportunidade" },
     { expression: "No pain, no gain", translation: "Sem esforço, sem recompensa" },
-    { expression: "Off the hook", translation: "Livrar-se de uma situação difícil" },
-    { expression: "Piece of pie", translation: "Moleza" },
     { expression: "Put all your eggs in one basket", translation: "Colocar todos os ovos em uma cesta" },
-    { expression: "Raining cats and dogs", translation: "Chovendo canivetes" },
+    { expression: "Raining cats and dogs", translation: "Chovendo canivetes/muito" },
     { expression: "The best of both worlds", translation: "O melhor dos dois mundos" },
     { expression: "Under the weather", translation: "Indisposto" },
     { expression: "You can't judge a book by its cover", translation: "Não se pode julgar um livro pela capa" },
