@@ -67,7 +67,6 @@ function Words() {
                                 </div>
                             ))}
                         </Container>
-
                     </>
                 )}
 
