@@ -8,6 +8,7 @@ import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import HomeIcon from '@mui/icons-material/Home';
 import Image from 'next/image';
 import FormatColorTextIcon from '@mui/icons-material/FormatColorText';
+import TextRotationAngleupIcon from '@mui/icons-material/TextRotationAngleup';
 
 import { svgBars } from '../../public';
 
@@ -37,6 +38,11 @@ const Bars = () => {
                                 <LiMenuBars href='main#expressions'>
                                         <RecordVoiceOverSharpIcon />
                                         <span>Expressões</span>
+                                </LiMenuBars>
+                                
+                                <LiMenuBars href='main#acro'>
+                                        <TextRotationAngleupIcon />
+                                        <span>Acrônimos</span>
                                 </LiMenuBars>
 
                                 <LiMenuBars href='main#text'>
