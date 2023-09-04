@@ -8,9 +8,13 @@ import Spinner from '../Spinner';
 import { expression, words } from "../../utils/english"
 import Container from './Container';
 import MainContainer from './MainContainer';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import useEye from '@/hooks/useEye';
 
 
 function Words() {
+
+    const {showTraslate} = useEye()
 
     const [isLoading, setIsloading] = useState(true)
 
@@ -43,7 +47,9 @@ function Words() {
                                     <span className='capitalize'>
                                         {all.word}
                                         <ArrowRightAltIcon />
-                                        <span className='text-light-500'>{all.translation}</span>
+                                        <span key={i} className={`text-light-500`}>
+                                            {showTraslate ? all?.translation : <VisibilityOffIcon/>}
+                                        </span>
                                     </span>
 
                                 </div>
@@ -62,7 +68,11 @@ function Words() {
                                             {all.expression}
                                         </span>
                                         <ArrowRightAltIcon />
-                                        <span className='text-light-500'>{all.translation}</span>
+                                        <span 
+                                            key={i}
+                                            className='text-light-500'>
+                                                {showTraslate ? all.translation : <VisibilityOffIcon/>}
+                                        </span>
                                     </span>
                                 </div>
                             ))}

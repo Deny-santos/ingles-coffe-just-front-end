@@ -13,6 +13,7 @@ import Sentences from './Sentences'
 import H2 from './H2'
 import Separator from './Separator'
 import Acronimos from './Acronimos'
+import Eye from './Eye'
 
 
 function MainWrapper() {
@@ -33,6 +34,7 @@ function MainWrapper() {
             <MainOptionsContainer />
             <UserName />
             <CardSesion />
+            <Eye />
             <H2 text='palavras e expressões'/>
             <Words />
             <Separator/>

@@ -1,14 +1,19 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import MainContainer from './MainContainer'
 import Container from './Container'
 import { acronimos } from "@/utils/english/acronimos"
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import CircleIcon from '@mui/icons-material/Circle';
+import useEye from '@/hooks/useEye'
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
-type Props = {}
+const Acronimos = () => {
 
-const Acronimos = (props: Props) => {
+    const { showTraslate } = useEye()
+
     return (
         <>
             <MainContainer>
@@ -22,9 +27,9 @@ const Acronimos = (props: Props) => {
                             <span className='capitalize'>
                                 {all.acronimo}
                                 <ArrowRightAltIcon />
-                                <span className='text-light-500'>{all.mean}</span>
-                                <span className='px-4'>< CircleIcon className='text-[10px]'/></span>
-                                <span className='text-light-500'>{all.translation}</span>
+                                <span className='text-light-500'>{showTraslate ? all.mean : <VisibilityOffIcon/>}</span>
+                                <span className='px-4'>< CircleIcon className='text-[10px]' /></span>
+                                <span className='text-light-500'>{showTraslate ? all.translation: <VisibilityOffIcon/>}</span>
                             </span>
 
                         </div>

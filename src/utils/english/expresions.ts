@@ -2,6 +2,7 @@ export const expression = [
     { expression: "Shake a lrg", translation: "se apresse/ adiante" },
     { expression: "God Bless you", translation: "Saude / Deus abençoe" },
     { expression: "Not at all", translation: "De jeito nenhum" },
+    { expression: "lets hit it", translation: "vamos indireitar" },
     { expression: "I'm on it", translation: "Pode deixar comigo" },
     { expression: "give me a break", translation: "Me da um tempo" },
     { expression: "You left me hanging", translation: "Você me deixou no vácuo" },
