@@ -1,4 +1,4 @@
-export const acronimosPt = [
+export const acronimos = [
     { acronimo: "WFH", mean: "work from home", translation: "trabalhar de casa" },
     { acronimo: "NGL", mean: "Not gonna lie", translation: "não vou mentir" },
     { acronimo: "FAQ", mean: "Frequently asked question", translation: "pergunta frequentemente feita" },

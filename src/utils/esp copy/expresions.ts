@@ -1,4 +1,4 @@
-export const expressionPt = [
+export const expression = [
     { expression: "Shake a lrg", translation: "se apresse/ adiante" },
     { expression: "God Bless you", translation: "Saude / Deus abençoe" },
     { expression: "Not at all", translation: "De jeito nenhum" },
@@ -153,9 +153,7 @@ export const expressionPt = [
     { expression: "In hot water", translation: "Envolvido em problemas" },
     { expression: "Jump on the bandwagon", translation: "Seguir a moda, aderir à tendência" },
     { expression: "Make a mountain out of a molehill", translation: "Fazer tempestade em copo d'água" },
-    { expression: "No pain, no gain", translation: "Sem esforço, sem recompensa" },
     { expression: "Over the moon", translation: "Extremamente feliz" },
-    { expression: "Put all your eggs in one basket", translation: "Colocar todos os ovos na mesma cesta" },
     { expression: "Rain or shine", translation: "Faça sol ou faça chuva" },
     { expression: "The early bird catches the worm", translation: "Deus ajuda quem cedo madruga" },
     { expression: "Two peas in a pod", translation: "Gêmeos idênticos" },
@@ -163,6 +161,4 @@ export const expressionPt = [
     { expression: "All in the same boat", translation: "Todos na mesma situação" },
     { expression: "Actions speak louder than words", translation: "As ações falam mais alto que as palavras" },
     { expression: "Beauty is in the eye of the beholder", translation: "A beleza está nos olhos de quem vê" },
-    { expression: "Don't judge a book by its cover", translation: "Não julgue um livro pela capa" },
-    { expression: "Every cloud has a silver lining", translation: "Nem tudo é ruim, há algo de bom em cada situação" }
 ]

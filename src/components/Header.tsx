@@ -12,9 +12,6 @@ const Header = () => {
             flex flex-1 text-white absolute w-screen h-[90px] 
             items-center px-5 sm:px-10 sm:gap-10 gap-3 justify-between max-w-[100vw]
         `}>
-            <div className='z-10'>
-                <MyToggleButton/>
-            </div>
             
             <div className='w-full hidden md:flex'>
                 <Logo />
@@ -27,12 +24,12 @@ const Header = () => {
                         text-[13px] sm:text-[20px]  px-8 sm:px-8 bg-blue-100 text-light-50 h-max max-w-[100%] font-semibold rounded-md
                         py-3
                     `}>
-                    Começar
+                    Go
                 </a>
             </div>
 
             <div className='flex  items-center justify-around'>
-                <Tooltip title="Veja Minhas Redes Sociais No Rodapé, Apos clicar Em Começar" enterDelay={500} leaveDelay={200}>
+                <Tooltip title="Show My Social Media In The Footer Of Next Page" enterDelay={500} leaveDelay={200}>
                     <Badge badgeContent={1} color="primary">
                         <MailIcon sx={{ cursor: "pointer", color: "white" }} />
                     </Badge>

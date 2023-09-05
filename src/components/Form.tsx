@@ -35,7 +35,7 @@ function Form() {
                 onClick={handleSubmit}
                 href="/main"
                 className='py-3 text-[20px] px-14 bg-blue-50 text-light-50 h-max max-w-[100%] font-semibold rounded-md'>
-                Começar
+                Get Start
             </a>
         </form>
         

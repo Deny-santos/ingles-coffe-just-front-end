@@ -5,6 +5,7 @@ import { DarkProvider } from "../../context/theme"
 import { EyeProvider } from "../../context/eye"
 import { FocusProvider } from "../../context/focus"
 import { ReverseProvider } from "../../context/reverse"
+import { LanguageProvider } from "../../context/language"
 
 const MainContent = () => {
 
@@ -15,7 +16,9 @@ const MainContent = () => {
                     <FocusProvider>
                         <ReverseProvider>
                             <EyeProvider>
-                                <MainWrapper />
+                                <LanguageProvider>
+                                    <MainWrapper />
+                                </LanguageProvider>
                             </EyeProvider>
                         </ReverseProvider>
                     </FocusProvider>

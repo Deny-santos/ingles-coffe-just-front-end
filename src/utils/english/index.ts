@@ -1,6 +1,7 @@
-import { words } from "./words"
-import { expression } from "./expresions"
+import { wordsPt } from "./words"
+import { expressionPt } from "./expresions"
+import { acronimosPt } from "./acronimos"
 
 export {
-    words, expression
+    wordsPt, expressionPt, acronimosPt
 }

@@ -5,18 +5,24 @@ import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutli
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import 'react-loading-skeleton/dist/skeleton.css'
 import Spinner from '../Spinner';
-import { expression, words } from "../../utils/english"
 import Container from './Container';
 import MainContainer from './MainContainer';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import useEye from '@/hooks/useEye';
+import useLanguage from '@/hooks/useLanguage';
 
 
 function Words() {
 
-    const {showTraslate} = useEye()
+    const { showTraslate } = useEye()
+
+    const { isEsp, words, expression} = useLanguage()
+
+    // const [words, setWord] = useState(wordsPt)
+    // const [expression, setExpression] = useState(expressionPt)
 
     const [isLoading, setIsloading] = useState(true)
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -48,7 +54,7 @@ function Words() {
                                         {all.word}
                                         <ArrowRightAltIcon />
                                         <span key={i} className={`text-light-500`}>
-                                            {showTraslate ? all?.translation : <VisibilityOffIcon/>}
+                                            {showTraslate ? all?.translation : <VisibilityOffIcon />}
                                         </span>
                                     </span>
 
@@ -68,10 +74,10 @@ function Words() {
                                             {all.expression}
                                         </span>
                                         <ArrowRightAltIcon />
-                                        <span 
+                                        <span
                                             key={i}
                                             className='text-light-500'>
-                                                {showTraslate ? all.translation : <VisibilityOffIcon/>}
+                                            {showTraslate ? all.translation : <VisibilityOffIcon />}
                                         </span>
                                     </span>
                                 </div>

@@ -11,10 +11,12 @@ import FormatColorTextIcon from '@mui/icons-material/FormatColorText';
 import TextRotationAngleupIcon from '@mui/icons-material/TextRotationAngleup';
 
 import { svgBars } from '../../public';
+import useLanguage from '@/hooks/useLanguage';
 
 const Bars = () => {
 
         const { handleShowMenu, showBars } = useMenuBars()
+        const { isEsp } = useLanguage()
 
         return (
                 <div className={` 
@@ -32,17 +34,17 @@ const Bars = () => {
 
                                 <LiMenuBars href='main#words'>
                                         <TranslateIcon />
-                                        <span>Palavras</span>
+                                        <span>{!isEsp ? "Palabras":"Palavras"}</span>
                                 </LiMenuBars>
 
                                 <LiMenuBars href='main#expressions'>
                                         <RecordVoiceOverSharpIcon />
-                                        <span>Expressões</span>
+                                        <span>{!isEsp ? "Expresiones":"Expressões"}</span>
                                 </LiMenuBars>
                                 
                                 <LiMenuBars href='main#acro'>
                                         <TextRotationAngleupIcon />
-                                        <span>Acrônimos</span>
+                                        <span>{!isEsp ? "acrónimos":"Acrônimos"}</span>
                                 </LiMenuBars>
 
                                 <LiMenuBars href='main#text'>
@@ -52,7 +54,7 @@ const Bars = () => {
 
                                 <LiMenuBars href='main#footer'>
                                         <CallOutlinedIcon />
-                                        <span>Contatos</span>
+                                        <span>{!isEsp ? "Contactos":"Contato"}</span>
                                 </LiMenuBars>
                         </ul>
                         <div className='absolute top-0 bg-[#09090952] h-full left-0 flex items-end z-10'>

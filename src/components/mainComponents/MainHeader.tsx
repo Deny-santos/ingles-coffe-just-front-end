@@ -6,12 +6,15 @@ import Logo from '../Logo'
 import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
 import useTheme from '@/hooks/useTheme'
+import useLanguage from '@/hooks/useLanguage'
 
 const MainHeader = () => {
 
     const { setShowBars, showBars} = useMenuBars()
     
     const { darkMode, handleSetDarkMode } = useTheme()
+
+    const {isEsp} = useLanguage()
 
     return (
         <header 
@@ -34,7 +37,7 @@ const MainHeader = () => {
                         </span>
                     }
                 </span >
-                <span className='text-light-300 text-sm'>atualizado em 01/09/23</span>
+                <span className='text-light-300 text-sm'>{!isEsp ? "actualizado en": "atualizado em"} 05/09/23</span>
         </header>
     )
 }

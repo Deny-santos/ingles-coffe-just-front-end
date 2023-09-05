@@ -3,16 +3,17 @@
 import React, { useState } from 'react'
 import MainContainer from './MainContainer'
 import Container from './Container'
-import { acronimos } from "@/utils/english/acronimos"
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 import CircleIcon from '@mui/icons-material/Circle';
 import useEye from '@/hooks/useEye'
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import useLanguage from '@/hooks/useLanguage'
 
 const Acronimos = () => {
 
     const { showTraslate } = useEye()
+    const { acronimos } = useLanguage()
 
     return (
         <>

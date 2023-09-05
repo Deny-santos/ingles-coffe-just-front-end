@@ -14,12 +14,15 @@ import H2 from './H2'
 import Separator from './Separator'
 import Acronimos from './Acronimos'
 import Eye from './Eye'
+import Flag from './Flag'
+import useLanguage from '@/hooks/useLanguage'
 
 
 function MainWrapper() {
 
     const { darkMode } = useTheme()
     const { setShowBars, showBars } = useMenuBars()
+    const { isEsp } = useLanguage()
 
     return (
         <main
@@ -33,15 +36,16 @@ function MainWrapper() {
             <MainHeader />
             <MainOptionsContainer />
             <UserName />
+            <Flag />
             <CardSesion />
             <Eye />
-            <H2 text='palavras e expressões'/>
+            <H2 text={`${!isEsp ? "Palabras y Expresiones" : "Palavras e Expressões"}`} />
             <Words />
-            <Separator/>
-            <H2 text='Acrônimos'/>
-            <Acronimos/>
-            <Separator/>
-            <H2 text='Textos'/>
+            <Separator />
+            <H2 text='Acrônimos' />
+            <Acronimos />
+            <Separator />
+            <H2 text='Textos' />
             <Sentences />
             <MainFooter />
         </main>
