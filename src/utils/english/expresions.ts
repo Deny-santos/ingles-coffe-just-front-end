@@ -1,5 +1,6 @@
 export const expressionPt = [
-    { expression: "Shake a lrg", translation: "se apresse/ adiante" },
+    { expression: "it is not up you", translation: "não cabe a você decidir" },
+    { expression: "Shake a leg", translation: "se apresse/ adiante" },
     { expression: "God Bless you", translation: "Saude / Deus abençoe" },
     { expression: "Not at all", translation: "De jeito nenhum" },
     { expression: "lets hit it", translation: "vamos indireitar" },

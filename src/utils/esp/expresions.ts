@@ -1,4 +1,5 @@
 export const expressionEs = [
+    { expression: "it is not up you", translation: "No te corresponde decidir" },
     { expression: "Shake a leg", translation: "Apúrate" },
     { expression: "God Bless you", translation: "Dios te bendiga" },
     { expression: "Not at all", translation: "Para nada" },
