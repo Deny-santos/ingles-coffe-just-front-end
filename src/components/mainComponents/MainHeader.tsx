@@ -37,7 +37,7 @@ const MainHeader = () => {
                         </span>
                     }
                 </span >
-                <span className='text-light-300 text-sm'>{!isEsp ? "actualizado en": "atualizado em"} 05/09/23</span>
+                <span className='text-light-300 text-sm'>{!isEsp ? "actualizado en": "atualizado em"} 12/09/23</span>
         </header>
     )
 }
