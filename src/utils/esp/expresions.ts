@@ -1,4 +1,11 @@
 export const expressionEs = [
+    { expression: "burn down", translation: "quemar" },
+    { expression: "pass away", translation: "fallecer" },
+    { expression: "tear up", translation: "romper" },
+    { expression: "cheer up", translation: "animar" },
+    { expression: "light up", translation: "encender/iluminar" },
+    { expression: "rise up", translation: "levantarse" },
+    { expression: "take away", translation: "quitar" },
     { expression: "it is not up you", translation: "No te corresponde decidir" },
     { expression: "Shake a leg", translation: "Apúrate" },
     { expression: "God Bless you", translation: "Dios te bendiga" },
