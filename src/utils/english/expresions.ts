@@ -1,4 +1,6 @@
 export const expressionPt = [
+    { expression: "off the charts", translation: "fora da curva/do grafico" },
+    { expression: "mumbo jumbo ", translation: "um monte de bobagem/abrobrinhas" },
     { expression: "knock it off", translation: "pare com isso" },
     { expression: "Get out of hand.", translation: "perder o controle das coisas" },
     { expression: "Hang in there", translation: "aguentar firme" },

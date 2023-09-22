@@ -1,4 +1,6 @@
 export const expressionEs = [
+    { expression: "off the charts", translation: "fora da curva" },
+    { expression: "mumbo jumbo ", translation: "um monte de bobagem/abrobrinhas" },
     { expression: "knock it off", translation: "deja de hacerlo" },
     { expression: "Get out of hand", translation: "salirse de control" },
     { expression: "Hang in there", translation: "aguanta ahí" },
