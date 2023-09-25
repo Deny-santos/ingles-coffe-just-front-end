@@ -13,7 +13,7 @@ const Eye = () => {
     return (
         <div className={`
             p-1 flex items-center justify-center rounded-full cursor-pointer
-            bg-light-100 border-2 border-light-50 fixed top-24 left-5 bg-trasparent-50
+            bg-light-100 border-2 border-light-50 fixed top-28 left-5 bg-trasparent-50
         `}>
             <div 
             className={`

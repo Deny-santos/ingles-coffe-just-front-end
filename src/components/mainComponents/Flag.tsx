@@ -16,7 +16,7 @@ const Flag = (props: Props) => {
             <button
                 onClick={handleSetLenguage}
                 className={`
-                    w-12 fixed top-16 right-9 bg-blue-50 p-1 rounded-md
+                    w-12 fixed top-28 right-9 bg-blue-50 p-1 rounded-md
                     text-light-150
                 `}>
                 {!isEsp ? <Image alt='flag' className='max-h-full max-w-full' src={spain}/> : <Image alt='flag' className='max-h-full max-w-full' src={brazil}/>}
