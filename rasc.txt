@@ -1,0 +1,8 @@
+    { word: "Step down", translation: "demitir-se/renunciar/rescindir" },
+    { word: "Look down on", translation: "menosprezar" },
+    { word: "draw upon", translation: "recorrer a" },
+    { word: "Call out", translation: "chamar a atençao/gritar" },
+    { word: "Bring about", translation: "causar/provocar/trazer" },
+    { word: "Bail out", translation: "resgatar/resolver(financeiramente)" },
+    { word: "track down", translation: "localizar/encontrar" },
+    { word: "live up to", translation: "corresponder" },
